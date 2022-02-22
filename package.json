@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/parser": "^7.17.3",
+    "@babel/traverse": "^7.17.3",
     "@monaco-editor/react": "3.7.5",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.0",
+    "@types/jscodeshift": "^0.11.3",
     "@types/node": "^16.11.22",
     "@types/prettier": "^2.4.4",
     "@types/react": "^17.0.39",
@@ -15,8 +18,10 @@
     "axios": "^0.25.0",
     "bulmaswatch": "^0.8.1",
     "esbuild-wasm": "0.8.27",
+    "jscodeshift": "0.11.0",
     "localforage": "^1.10.0",
-    "monaco-editor": "0.32.1",
+    "monaco-editor": "0.21.2",
+    "monaco-jsx-highlighter": "0.0.15",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -30,10 +35,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app/jest"
-    ]
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   },
   "browserslist": {
     "production": [
