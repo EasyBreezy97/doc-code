@@ -5,6 +5,8 @@ import CodeEditor from "./components/code-editor";
 import { fetchPlugin } from "./plugins/fetch-plugin";
 import { unpkgPathPlugin } from "./plugins/unpkg-path-plugin";
 
+import "bulmaswatch/superhero/bulmaswatch.min.css";
+
 const App = () => {
     const [input, setInput] = useState("");
     const ref = useRef<any>();
