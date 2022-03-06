@@ -1,4 +1,4 @@
-export type CellTypes = "code" | "cell";
+export type CellTypes = "code" | "text";
 
 export interface Cell {
     id: string;
