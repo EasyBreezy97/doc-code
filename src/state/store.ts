@@ -14,3 +14,7 @@ store.dispatch({
     type: ActionType.INSERT_CELL_BEFORE,
     payload: { id: null, type: "text" },
 });
+store.dispatch({
+    type: ActionType.INSERT_CELL_BEFORE,
+    payload: { id: null, type: "text" },
+});
